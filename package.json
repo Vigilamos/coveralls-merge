@@ -1,5 +1,5 @@
 {
-  "name": "@sourceallies/coveralls-merge",
+  "name": "@vigilamos/coveralls-merge",
   "version": "1.0.0",
   "description": "All in one tool for managing coverage reports for Coveralls",
   "main": "index.js",
@@ -16,11 +16,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:sourceallies/coveralls-merge.git"
+    "url": "git://git@github.com/Vigilamos/coveralls-merge.git"
   },
   "author": "Source Allies",
   "contributors": [
-    "Michael Parker <mparker@sourceallies.com>"
+    "Michael Parker <mparker@sourceallies.com>",
+    "Abraham Quintero <abraham@tierra.co>"
   ],
   "license": "Apache-2.0",
   "nyc": {
@@ -49,5 +50,9 @@
   "dependencies": {
     "request": "^2.74.0",
     "xml2js": "^0.4.17"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
   }
 }
