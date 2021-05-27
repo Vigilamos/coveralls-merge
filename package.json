@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "babel src -d lib",
+    "build.watch": "babel --watch src -d lib",
     "coverage": "nyc --reporter=lcov npm test",
     "eslint": "eslint src/** test/unit/**",
     "prepublish": "npm run verify && npm run build",
