@@ -17,7 +17,7 @@ function convertLcovSectionToCoverallsSourceFile(lcovSection) {
             coverage: []
         };
 
-    let numberOfSourceFileLines = 0, lastLine = 1;
+    let numberOfSourceFileLines = 0, lastLine = 0;
 
     lcovSectionLines.forEach(line => {
         if (line.startsWith('SF:')) {
