@@ -33,4 +33,5 @@ export const post = source_files => {
             }
         }
     );
+    return json;
 };

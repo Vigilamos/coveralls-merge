@@ -2,10 +2,12 @@ import path from 'path';
 
 import parseLcov from './parse/parse-lcov';
 import parseJacoco from './parse/parse-jacoco';
+import parseCoveralls from './parse/parse-coveralls';
 
 const reports = {
     lcov: parseLcov,
-    jacoco: parseJacoco
+    jacoco: parseJacoco,
+    coveralls: parseCoveralls
 };
 
 export const parse = ({reportFile, type, workingDirectory = '.'}, config) => {

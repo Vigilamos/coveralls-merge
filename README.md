@@ -43,6 +43,7 @@ coveralls.sendReports(reports, options);
 | key         | value                                                                         | default |
 |-------------|-------------------------------------------------------------------------------|---------|
 | `projectRoot` | The root directory of the project, relative to the current working directory. | `'.'`   |
+| `coverallsFilePathPrefix` | Prefix for the filenames in `coveralls` report type. Can be used in [merge operations in multilanguage support](https://coveralls-python.readthedocs.io/en/latest/usage/multilang.html) | `Undefined`   |
 
 ### Repo Token
 
@@ -52,6 +53,7 @@ This tool reads the Coveralls repository token from the environment variable `CO
 
 - LCOV: `lcov`
 - JaCoCo XML: `jacoco`
+- coveralls.json: `coveralls`
 
 This tool was initially written to support the languages I needed at the time, but it is implemented in a way that
 makes adding additional formats painless. If the format you need is not currently supported, feel free to open an
