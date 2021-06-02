@@ -41,6 +41,9 @@ function getHead() {
 }
 
 function getBranch() {
+    if (process.env.TRAVIS) {
+        return process.env.TRAVIS_BRANCH;
+    }
     const branches = execSync('git branch').toString();
 
     return branches.match(BRANCH_REGEX)[1];
